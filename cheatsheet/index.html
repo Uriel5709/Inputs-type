@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+	<head>
+		<script src="../assets/js/color-modes.js"></script>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+		<meta name="generator" content="Hugo 0.122.0" />
+		<title>Cheatsheet · Bootstrap v5.3</title>
+
+		<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cheatsheet/" />
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+
+		<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+		<style>
+			.bd-placeholder-img {
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+			}
+
+			  @media (min-width: 768px) {
+				.bd-placeholder-img-lg {
+					font-size: 3.5rem;
+				}
+			}
+
+			.b-example-divider {
+				width: 100%;
+				height: 3rem;
+				background-color: rgba(0, 0, 0, 0.1);
+				border: solid rgba(0, 0, 0, 0.15);
+				border-width: 1px 0;
+				box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+			}
+
+			.b-example-vr {
+				flex-shrink: 0;
+				width: 1.5rem;
+				height: 100vh;
+			}
+
+			.bi {
+				vertical-align: -0.125em;
+				fill: currentColor;
+			}
+
+			.nav-scroller {
+				position: relative;
+				z-index: 2;
+				height: 2.75rem;
+				overflow-y: hidden;
+			}
+
+			.nav-scroller .nav {
+				display: flex;
+				flex-wrap: nowrap;
+				padding-bottom: 1rem;
+				margin-top: -1px;
+				overflow-x: auto;
+				text-align: center;
+				white-space: nowrap;
+				-webkit-overflow-scrolling: touch;
+			}
+
+			.btn-bd-primary {
+				--bd-violet-bg: #712cf9;
+				--bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+				--bs-btn-font-weight: 600;
+				--bs-btn-color: var(--bs-white);
+				--bs-btn-bg: var(--bd-violet-bg);
+				--bs-btn-border-color: var(--bd-violet-bg);
+				--bs-btn-hover-color: var(--bs-white);
+				--bs-btn-hover-bg: #6528e0;
+				--bs-btn-hover-border-color: #6528e0;
+				--bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+				--bs-btn-active-color: var(--bs-btn-hover-color);
+				--bs-btn-active-bg: #5a23c8;
+				--bs-btn-active-border-color: #5a23c8;
+			}
+
+			.bd-mode-toggle {
+				z-index: 1500;
+			}
+
+			.bd-mode-toggle .dropdown-menu .active .bi {
+				display: block !important;
+			}
+		</style>
+
+		<!-- Custom styles for this template -->
+		<link href="cheatsheet.css" rel="stylesheet" />
+	</head>
+	<body class="bg-body-tertiary">
+		<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+			<symbol id="check2" viewBox="0 0 16 16">
+				<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+			</symbol>
+			<symbol id="circle-half" viewBox="0 0 16 16">
+				<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+			</symbol>
+			<symbol id="moon-stars-fill" viewBox="0 0 16 16">
+				<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+				<path
+					d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+			</symbol>
+			<symbol id="sun-fill" viewBox="0 0 16 16">
+				<path
+					d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+			</symbol>
+		</svg>
+
+		<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+			<button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+				<svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+				<span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+			</button>
+			<ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+				<li>
+					<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+						<svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+						Claro
+						<svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+					</button>
+				</li>
+				<li>
+					<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+						<svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+						Oscuro
+						<svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+					</button>
+				</li>
+				<li>
+					<button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+						<svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+						Automático
+						<svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+					</button>
+				</li>
+			</ul>
+		</div>
+
+		<header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+			<div class="container-fluid d-flex align-items-center">
+				<h1 class="d-flex align-items-center fs-4 text-white mb-0">
+					<img src="../assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="me-3" alt="Bootstrap" />
+					BuscaTrabajo.com
+				</h1>
+				<a href="../examples/cheatsheet-rtl/" class="ms-auto link-light" hreflang="ar">BuscaTrabajo.com</a>
+			</div>
+		</header>
+		<aside class="bd-aside sticky-xl-top text-body-secondary align-self-start mb-3 mb-xl-5 px-2">
+			<h2 class="h6 pt-4 pb-3 mb-4 border-bottom">En la página</h2>
+			<nav class="small" id="toc">
+				<ul class="list-unstyled">
+					<li class="my-2">
+						<button type="button" class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Contenido</button>
+						<ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+							<li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#typography">Bienvenido!</a></li>
+						</ul>
+					</li>
+					<li class="my-2">
+						<button type="button" class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">Formulario</button>
+						<ul class="list-unstyled ps-3 collapse" id="forms-collapse">
+							<li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#overview">Descripción general</a></li>
+							<li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#disabled-forms">Información de cuenta</a></li>
+							<li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#sizing">Correo</a></li>
+							<li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#input-group">Validación</a></li>
+						</ul>
+					</li>
+					<li class="my-2">
+						<button type="button" class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">Contáctanos</button>
+						<ul class="list-unstyled ps-3 collapse" id="components-collapse">
+							<li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#accordion">Información</a></li>
+							<li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#alerts">Redes sociales</a></li>
+							<li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#badge">Números telefónicos</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<div class="bd-cheatsheet container-fluid bg-body">
+			<section id="content">
+				<h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Contenido</h2>
+
+				<article class="my-3" id="typography">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+						<h3>Bienvenido!</h3>
+						<a class="d-flex align-items-center" href="../content/typography/">información</a>
+					</div>
+
+					<div>
+						
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<p class="h1">Trabajos</p>
+							</div>
+						</div>
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<p class="lead">Puedes encontrar todo tipo de trabajo aquí, desde el más indicado para ti, hasta el que quieras experimentar.</p>
+							</div>
+						</div>
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<p>Solo tienes que seguir unos<mark>pasos</mark>para que puedas empezar</p>
+								<p>a buscar el trabajo indicado para ti, no importa si no tienes</p>
+								<p>mucha experiencia, pues en este lugar también te invitamos a</p>
+								<p>aprender, todo es un proceso y queremos que seas parte del </p>
+								<p>nuestro y mucho más.</p>
+								<p><strong>Continua...</strong></p>
+							</div>
+						</div>
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<hr />
+							</div>
+						</div>
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<blockquote class="blockquote">
+									<p>Ahora te explicaremos que debes tener a la mano.</p>
+									<footer class="blockquote-footer">Es muy importante la siguiente información</footer>
+								</blockquote>
+							</div>
+						</div>
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<ul class="list-unstyled">
+									<li>Esta es la lista:</li>
+									<li>Tendrás que tener todo tipo de documento sobre ti, cada</li>
+									<li>uno al día (hasta la fecha actual) con sus respectivos</li>
+									<li>cambios y actualizaciones de la información.</li>
+                  <br>
+									<li>
+										Dichos documentos son:
+										<ul>
+											<li>Hoja de vida (al día)</li>
+											<li>Formato escaneado de la cedula de ciudadania</li>
+											<li>Documentos del hogar y un recibo de cualquier consumo</li>
+										</ul>
+									</li>
+                  <br>
+									<li>Recuerda que si no sigues los pasos no podrás seguir con el proceso.</li>
+								</ul>
+							</div>
+						</div>
+
+						
+					</div>
+				</article>
+				<article class="my-3" id="images">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+					<div>
+					</div>
+				</article>
+				<article class="my-3" id="figures">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+				</article>
+			</section>
+
+			<section id="forms">
+				<h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Formularios</h2>
+
+				<article class="my-3" id="overview">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+						<h3>Descripcion general</h3>
+						<a class="d-flex align-items-center" href="../forms/overview/">información</a>
+					</div>
+
+					<div>
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<form>
+                  <h2>Formulario para inscripción</h2>
+                  <br>
+                  <h5>Deberás responder obligatoriamente cada una de las siguientes casillas e indicar a que trabajo deseas aspirar.</h5>
+                  <br>
+                  <div class="mb-3">
+										<label for="exampleInputEmail1" class="form-label">Dirección de correo electrónico</label>
+										<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+										<div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+									</div>
+									<div class="mb-3">
+										<label for="exampleInputPassword1" class="form-label">Contraseña</label>
+										<input type="password" class="form-control" id="exampleInputPassword1" />
+									</div>
+									<div class="mb-3">
+										<label for="exampleSelect" class="form-label">Seleccionar país</label>
+										<select class="form-select" id="exampleSelect">
+											<option selected>Seleccionar...</option>
+											<option value="1">Colombia</option>
+											<option value="2">Mexico</option>
+											<option value="3">Argentina</option>
+                      <option value="4">Estados Unidos</option>
+										</select>
+									</div>
+									<div class="mb-3 form-check">
+										<input type="checkbox" class="form-check-input" id="exampleCheck1" />
+										<label class="form-check-label" for="exampleCheck1">Estoy de acuerdo con los terminos y condiciones</label>
+									</div>
+									<fieldset class="mb-3">
+										<legend>¿Está dispuesto a trabajar en cualquier tipo de trabajo?</legend>
+										<div class="form-check">
+											<input type="radio" name="radios" class="form-check-input" id="exampleRadio1" />
+											<label class="form-check-label" for="exampleRadio1">Si</label>
+										</div>
+										<div class="mb-3 form-check">
+											<input type="radio" name="radios" class="form-check-input" id="exampleRadio2" />
+											<label class="form-check-label" for="exampleRadio2">No</label>
+										</div>
+                    <div class="mb-3 form-check">
+											<input type="radio" name="radios" class="form-check-input" id="exampleRadio3" />
+											<label class="form-check-label" for="exampleRadio3">Tal véz...</label>
+										</div>
+                  </fieldset>
+									<div class="mb-3">
+										<label class="form-label" for="customFile">Sube tu hoja de vida</label>
+										<input type="file" class="form-control" id="customFile" />
+									</div>
+									<div class="mb-3 form-check form-switch">
+										<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
+										<label class="form-check-label" for="flexSwitchCheckChecked">Verifica que todo va bien</label>
+									</div>
+									<button type="submit" class="btn btn-primary">Enviar</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="my-3" id="disabled-forms">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+					<div>
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<form>
+									
+										<div class="mb-3">
+											<label for="disabledTextInput" class="form-label">Nombres y apellidos completos</label>
+											<input type="text" id="disabledTextInput" class="form-control" placeholder="Nombres y apellidos" />
+										</div>
+										<div class="mb-3">
+											<label for="disabledSelect" class="form-label">Indique su edad</label>
+											<input type="number" class="form-control" placeholder="Edad en números">
+											</select>
+										</div>
+										<div class="mb-3">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" id="disabledFieldsetCheck"/>
+												<label class="form-check-label">Verifique sus datos</label>
+											</div>
+										</div>
+											<legend>¿Ya ha tenido experiencia laboral?</legend>
+											<div class="form-check">
+												<input type="radio" name="radios" class="form-check-input" id="disabledRadio1"/>
+												<label class="form-check-label" for="disabledRadio1">Si</label>
+											</div>
+											<div class="mb-3 form-check">
+												<input type="radio" name="radios" class="form-check-input" id="disabledRadio2"/>
+												<label class="form-check-label" for="disabledRadio2">No</label>
+											</div>
+										</fieldset>
+										<div class="mb-3">
+											<label class="form-label" for="disabledCustomFile">Suba el escaneado de su C.C.</label>
+											<input type="file" class="form-control" id="disabledCustomFile"/>
+										</div>
+										<div class="mb-3 form-check form-switch">
+											<input class="form-check-input" type="checkbox" role="switch" id="disabledSwitchCheckChecked"/>
+											<label class="form-check-label" for="disabledSwitchCheckChecked">Acepta los que sus datos sean utilizados en nuestra plataforma</label>
+										</div>
+										<div class="mb-3">
+                      <br>
+											<label for="disabledRange" class="form-label">¿Del 1 al 100 como ha sido su experiencia?</label>
+                      <br><br>
+											<input type="range" class="form-range" min="0" max="5" step="0.5" id="disabledRange" />
+										</div>
+								 </fieldset>
+							 </div>
+						 </div>
+					 </div>
+				 </article>
+				 <article class="my-3" id="sizing">
+					 <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+					 <div>
+						 <div class="bd-example-snippet bd-code-snippet">
+							 <div class="bd-example m-0 border-0">
+								 <div class="mb-3">
+                   <h6>Cuentenos a que trabajo quiere postularse</h6>
+									 <input class="form-control form-control-sm" type="text" placeholder="Escriba aquí" aria-label=".form-control-sm example" />
+								 </div>
+								 <div class="mb-3">
+                   <h6>Suba sus documentos de hogar</h6>
+									 <input type="file" class="form-control form-control-sm" aria-label="Small file input example" />
+								 </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+							 </div>
+              </form> 
+						 </div>
+					 </div>
+				 </article>
+				<article class="my-3" id="input-group">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+						<h3>Información de cuenta</h3>
+						<a class="d-flex align-items-center" href="../forms/input-group/">Documentación</a>
+					</div>
+
+					<div>
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<div class="input-group mb-3">
+									<span class="input-group-text" id="basic-addon1">@</span>
+									<input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Username" aria-describedby="basic-addon1" />
+								</div>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" placeholder="Nombre de usuario del destinario" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+									<span class="input-group-text" id="basic-addon2">@ejemplo.com</span>
+								</div>
+								<label for="basic-url" class="form-label">Tu URL personalizada</label>
+								<div class="input-group mb-3">
+									<span class="input-group-text" id="basic-addon3">https://ejemplo.com/usuarios/</span>
+									<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" />
+								</div>
+								<div class="input-group mb-3">
+									<span class="input-group-text">$</span>
+									<input type="text" class="form-control" placeholder="Cuanto aspira a ganar..." aria-label="Amount (to the nearest dollar)" />
+									<span class="input-group-text">.00</span>
+								</div>
+								<div class="input-group">
+									<span class="input-group-text">Dinos porqué</span>
+									<textarea class="form-control" aria-label="With textarea"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="my-3" id="floating-labels">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+						<h3>Correo</h3>
+						<a class="d-flex align-items-center" href="../forms/floating-labels/">Información</a>
+					</div>
+
+					<div>
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<form>
+									<div class="form-floating mb-3">
+										<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+										<label for="floatingInput">Dirección de correo electrónico</label>
+									</div>
+									<div class="form-floating">
+										<input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" />
+										<label for="floatingPassword">Contraseña</label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="my-3" id="validation">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+						<h3>Validación</h3>
+						<a class="d-flex align-items-center" href="../forms/validation/">Información</a>
+					</div>
+
+					<div>
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<form class="row g-3">
+									<div class="col-md-4">
+										<label for="validationServer01" class="form-label">Primer nombre</label>
+										<input type="text" class="form-control is-valid" id="validationServer01" required />
+										<div class="valid-feedback">buen trabajo!</div>
+									</div>
+									<div class="col-md-4">
+										<label for="validationServer02" class="form-label">Apellido</label>
+										<input type="text" class="form-control is-valid" id="validationServer02" required />
+										<div class="valid-feedback">Buen trabajo!</div>
+									</div>
+									<div class="col-md-4">
+										<label for="validationServerUsername" class="form-label">Usuario</label>
+										<div class="input-group has-validation">
+											<span class="input-group-text" id="inputGroupPrepend3">@</span>
+											<input type="text" class="form-control is-valid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required />
+											<div class="invalid-feedback">Por favor escriba su usuario.</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<label for="validationServer03" class="form-label">Ciudad</label>
+										<input type="text" class="form-control is-valid" id="validationServer03" required />
+										<div class="invalid-feedback">Por favor escriba una ciudad válida.</div>
+									</div>
+									<div class="col-md-3">
+										<label for="validationServer04" class="form-label">Estado</label>
+										<input type="text" class="form-control is-valid" required>
+											<option selected disabled value="">Escriba...</option>
+											<option>...</option>
+										</input>
+										<div class="invalid-feedback">Por favor escriba un estado válido.</div>
+									</div>
+									<div class="col-md-3">
+										<label for="validationServer05" class="form-label">Código postal</label>
+										<input type="text" class="form-control is-valid" id="validationServer05" required />
+										<div class="invalid-feedback">Por favor escriba un código postal válido.</div>
+									</div>
+									<div class="col-12">
+										<div class="form-check">
+											<input class="form-check-input is-valid" type="checkbox" value="" id="invalidCheck3" required />
+											<label class="form-check-label" for="invalidCheck3"> Acepto los términos y condiciones </label>
+											<div class="invalid-feedback">Debes aceptar antes de enviar.</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<button class="btn btn-primary" type="submit">Enviar formulario</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+
+			<section id="components">
+
+				<article class="my-3" id="accordion">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+					
+				</article>
+				<article class="my-3" id="alerts">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+					</div>
+
+					<div>
+						
+
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<div class="alert alert-success" role="alert">
+									<h4 class="alert-heading">¡Bien hecho!</h4>
+									<p>Sí, has leido y realizado correctamente todos los pasos, ahora puedes avanzar, dentro de los próximos 5 días, te estaremos contactando para que podamos darte una oportunidad.</p>
+									<hr />
+									<p class="mb-0">Recuerda que aquí todos pueden salir beneficiados.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="my-3" id="badge">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>	
+				</article>
+
+				<article class="my-3" id="breadcrumb">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+					<div>
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="#">Hogar</a></li>
+										<li class="breadcrumb-item"><a href="#">Librería</a></li>
+										<li class="breadcrumb-item active" aria-current="page">Datos</li>
+									</ol>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="my-3" id="buttons">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+				</article>
+
+				<article class="my-3" id="button-group">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+				</article>
+				<article class="my-3" id="card">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+					<div>
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+									<div class="col">
+										<div class="card">
+                      <div class="card-img-top" style="background-image: url('./programador.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; height: 180px;">
+                      </div>
+											<div class="card-body">
+												<h5 class="card-title">Programadores</h5>
+												<p class="card-text">En esta app podrás comunicarte con demas programadores e ingenieros en sistemas, y ofertar tu experiencia como ingeniero.</p>
+												<a href="#" class="btn btn-primary">Ir a la página</a>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="card">
+											<div class="card-header">Presentación</div>
+											<div class="card-body">
+												<h5 class="card-title">Agricultores</h5>
+												<p class="card-text">Ayuda a producir el alimento y pan de cada día, ustedes son la principal razón por la que disponemos de alimentos saludables.</p>
+												<a href="#" class="btn btn-primary">Ir a la página</a>
+											</div>
+											<div class="card-footer text-body-secondary">Hace 2 días</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="card">
+											<div class="card-body">
+												<h5 class="card-title">Abogados</h5>
+												<p class="card-text">¿Ya eres abogado?, comunicate y busca personas a las que puedas ayudar en sus casos legales, haste reconocer y ayuda a los demás.</p>
+											</div>
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item">Casos</li>
+												<li class="list-group-item">Investigaciones</li>
+												<li class="list-group-item">Procesos</li>
+											</ul>
+											<div class="card-body">
+												<a href="#" class="card-link">link abogados</a>
+												<a href="#" class="card-link">abogados.com</a>
+											</div>
+										</div>
+									</div>
+									<div class="col">
+										<div class="card">
+											<div class="row g-0">
+												<div class="col-md-4">
+													 <div class="card-img-top" style="background-image: url('./periodistas.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; height: 180px;">
+                          </div>
+												</div>
+												<div class="col-md-8">
+													<div class="card-body">
+														<h5 class="card-title">Periodistas</h5>
+														<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+														<p class="card-text"><small class="text-body-secondary">Última actualización hace 3 días</small></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+        <br><br><br><br>
+				<article class="my-3" id="carousel">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+						<h3>Información</h3>
+						<a class="d-flex align-items-center" href="../components/carousel/">Documentación</a>
+					</div>
+
+					<div>
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0">
+								<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+									<div class="carousel-indicators">
+										<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+										<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+										<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+									</div>
+									<div class="carousel-inner">
+										<div class="carousel-item active" style="background-image: url('./curso.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+											<svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false" style="opacity: 0;">
+												<title>Cursos</title>
+												<rect width="100%" height="100%" fill="#777" />
+											</svg>
+											<div class="carousel-caption d-none d-md-block">
+												<h5>Cursos gratuitos!</h5>
+												<p>Ven y unete a nosotros en nuestros cursos gratis de todo tipo de temas.</p>
+											</div>
+										</div>
+										<div class="carousel-item" style="background-image: url('./plataforma.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+											<svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false" style="opacity: 0;">
+												<title>Plataformas</title>
+												<rect width="100%" height="100%" fill="#666" />
+											</svg>
+											<div class="carousel-caption d-none d-md-block">
+												<h5>Plataformas externas</h5>
+												<p>Indaga más sobre nuestras plataformas, donde te ofrecemos demás servicios y cosas interesantes.</p>
+											</div>
+										</div>
+										<div class="carousel-item" style="background-image: url('./contactanos.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+											<svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false" style="opacity: 0;">
+												<title>Placeholder</title>
+												<rect width="100%" height="100%" fill="#555" />
+											</svg>
+											<div class="carousel-caption d-none d-md-block">
+												<h5>¿Quieres conocernos más?</h5>
+												<p>Tambien disponemos de redes sociales, y números telefónicos donde puedes contactarnos. ¡Llama ya!</p>
+											</div>
+										</div>
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="my-3" id="dropdowns">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+				</article>
+				<article class="my-3" id="list-group">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+					
+				</article>
+				
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+					
+				
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+				
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+			
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+			
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+			
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+					
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+					
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+					
+				<article class="my-3" id="toasts">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+					<div>
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0 bg-dark p-5 align-items-center">
+								<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+									<div class="toast-header">
+										<svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007aff" /></svg>
+										<strong class="me-auto">Jefe de trabajo</strong>
+										<small class="text-body-secondary">Hace 5 minutos</small>
+										<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+									</div>
+									<div class="toast-body">Hola, quieres aprender más sobre como triunfar en la vida?</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="mt-3 mb-5 pb-5" id="tooltips">
+					<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"></div>
+
+					<div>
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="bd-example m-0 border-0 tooltip-demo">
+								<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Haz click aquí">Información sobre nosotros</button>
+								<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Haz click aquí">Contáctanos aquí</button>
+								<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Haz click aquí">Encuentra nuestras páginas web...</button>
+								<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Haz click aquí">Quieres trabajar con nosotros?, ven ya!</button>
+								<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="Haz click aquí">Especializate en lo que sabes hacer y eres bueno</button>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+		</div>
+
+		<div class="modal fade" id="exampleModalDefault" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">...</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="staticBackdropLive" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLiveLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="staticBackdropLiveLabel">Modal title</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>I will not close if you click outside me. Don't even try to press escape key.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Understood</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollableTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalCenteredScrollableTitle">Modal title</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.</p>
+						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+						<p>This content should appear at the bottom after you scroll.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="exampleModalFullscreen" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-4" id="exampleModalFullscreenLabel">Full screen modal</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">...</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+		<script src="cheatsheet.js"></script>
+	</body>
+</html>
